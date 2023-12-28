@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">    
-<head>
-    <title>Rides at Fantastic Theme Park</title>   
-    <meta charset="utf-8">
-    <meta name="description" content="This is a website for the most famous Fantastic Theme Park where party happens.">
-    <meta name="author" content="group #38">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="refresh" content="6000">
-    <meta name="keywords" content="fantastic theme park, fantastc, party, family, fun">
-    <link rel="stylesheet" type="text/css" href="Style.css">
-</head>
-    
-    
-   
-    <body id="RidesBody"> 
-        <header id="RidesHeader">
-            <h1>Rides at Fantastic Theme Park</h1>   
-        </header> 
-        
-        <nav id="RidesNav">
-            <ul>
-                <li><a href="index.html">Home Page</a></li>
-                <li><a href="foodandgames.html">Food and Games</a></li>
-            </ul>
-        </nav>
-        
-<div class="grid-container-index"> 
-        <main id= "RidesMain">
-            <!-- put images here-->
-            <img src="img/mostPopularRide.jpg" > 
-            <img src="img/mostPopular.jpg">
-        </main>
-
-        <aside id="RidesInfo">
-            <h2>Attractions for Everyone</h2>
-            <p><b>Thrill Rides:</b> Feel the adrenaline rush on our epic roller coasters, 
-                The Thunder Loop and The Sky Falcon. Experience the thrill of zero 
-                gravity on the Star Spinner, and prepare to be amazed by the 
-                breathtaking views from our Giant Ferris Wheel.<br><br>
-                <b>Family Fun:</b> Enjoy a delightful time with the whole family on rides 
-                like the Merry-Go-Round, the Magic River Cruise, and the Enchanted 
-                Train Adventure.<br><br>
-                <b>Kiddie Wonderland:</b> A special area designed just for our younger 
-                adventurers, featuring gentle rides, interactive play zones, and 
-                beloved characters.</p>
-        </aside>
-        
-        <article id ="RidesArticle">
-        <!--    make a rule for the rides here-->
-            <h2>Rides rules, times and policies</h2>
-            <h3><b>Rules</b></h3>
+    <head>
+        <title>Rides at Fantastic Theme Park</title>   
+        <meta charset="utf-8">
+        <meta name="description" content="This is a website for the most famous Fantastic Theme Park where party happens.">
+        <meta name="author" content="group #38">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="refresh" content="6000">
+        <meta name="keywords" content="fantastic theme park, fantastc, party, family, fun">
+        <link rel="stylesheet" type="text/css" href="StyleSheet/style.css">
+    </head>     
+    <body> 
+        <div class = "grid-container-ridefood">
+            <header>
+                <object data="img/logo_park.png"></object>  
+                <h1>Rides at Fantastic Theme Park</h1> 
+                
+            </header> 
+            <nav>
+                <ol>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="foodandgames.html">Food and Games</a></li>
+                </ol>
+            </nav>
+            <main>
+                <!-- put images here-->
+                <img src="img/mostPopularRide.jpg" alt="Most popular Ride" width="400" height="300">    
+            </main>
+            <aside>
+                <h2>Attractions for Everyone</h2>
+                <p><b>Thrill Rides:</b> Feel the adrenaline rush on our epic roller coasters, 
+                    The Thunder Loop and The Sky Falcon. Experience the thrill of zero 
+                    gravity on the Star Spinner, and prepare to be amazed by the 
+                    breathtaking views from our Giant Ferris Wheel.<br><br>
+                    <b>Family Fun:</b> Enjoy a delightful time with the whole family on rides 
+                    like the Merry-Go-Round, the Magic River Cruise, and the Enchanted 
+                    Train Adventure.<br><br>
+                    <b>Kiddie Wonderland:</b> A special area designed just for our younger 
+                    adventurers, featuring gentle rides, interactive play zones, and 
+                    beloved characters.</p>
+            </aside>
+            <article>
+            <!--    make a rule for the rides here-->
+                <h2>Rides rules, times and policies</h2>
+                <p><b>Opening Hours</b></p>
+                <table>
+                    <tr><th>Monday</th><td>11am - 9pm</td> </tr>
+                    <tr><th>Tuesday</th><td>11am - 9pm</td> </tr>
+                    <tr><th>Wednesday</th><td>11am - 9pm</td> </tr>
+                    <tr><th>Thursday</th><td>11am - 9pm</td> </tr>
+                    <tr><th>Friday</th><td>11am - 9pm</td> </tr>
+                    <tr><th>Saturday</th><td>11am - 9pm</td> </tr>
+                    <tr><th>Sunday</th><td>11am - 9pm</td> </tr>
+                </table>
+            </article>
+            <div class="rules">
+                <h2><b>Rules</b></h2>
                 <ol>
                     <li>Minimum Height 122cm</li>
                     <li>Children must be accompanied by an adult</li>
@@ -58,17 +64,9 @@
                     <li>Follow the attendant’s instructions</li>
                     <li>Maintain respectful behavior</li>
                 </ol>
-            <h3><b>Opening Hours</b></h3>
-            <table>
-                <tr><th>Monday</th><td>Open 24 hours</td> </tr>
-                <tr><th>Tuesday</th><td>Open 24 hours</td> </tr>
-                <tr><th>Wednesday</th><td>Open 24 hours</td> </tr>
-                <tr><th>Thursday</th><td>Open 24 hours</td> </tr>
-                <tr><th>Friday</th><td>Open 24 hours</td> </tr>
-                <tr><th>Saturday</th><td>Open 24 hours</td> </tr>
-                <tr><th>Sunday</th><td>Open 24 hours</td> </tr>
-            </table>
-            <h3><b>Policies</b></h3>
+            </div>
+            <div class="policies">
+                <h2><b>Policies</b></h2>
                 <ul>
                     <li>Safty First</li>
                     <li>Respectful behavior</li>
@@ -77,19 +75,20 @@
                     <li>Please dispose of trash in provided bins to keep the park clean.</li>
                     <li>Only service animals are permitted in the park.</li>
                 </ul>
-        </article>
-</div>
-        <footer id ="RidesFooter">
-                <img src = "img.logo.png">    
-                <ul>
-                    <ul>
-                        <li id = "contact">Contact Us:</li>
-                        <li id = "name">Fantastic Theme Park</li>
-                        <li id = "location">Thema Park Road 1,<br> TP 80456,<br> Theme Park Land</li>
-                        <li id = "email"><a href="fantasticthemepark.com">Fantastic Theme Park</a></li>
-                        <li id = "tel">Tell: 555-5555</li>
-                    </ul>
-        </footer>
-    </body>
-    
+            </div>
+            <footer>
+                <div id="fpcontactInformation">
+                    <Address>
+                        <ul>
+                            <li id = "contact">Contact Us:</li>
+                            <li id = "name">Fantastic Theme Park</li>
+                            <li id = "location">Thema Park Road 1,<br> TP 80456,<br> Theme Park Land</li>
+                            <li id = "email"><a href="fantasticthemepark.com">Fantastic Theme Park</a></li>
+                            <li id = "tel">Tell: 555-5555</li>
+                        </ul>
+                    </Address>
+                </div>
+            </footer>
+        </div>
+    </body>    
 </html>
