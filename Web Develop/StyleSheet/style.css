@@ -1,0 +1,295 @@
+/*Common CSS-------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: white;
+    height: 100%;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 2em;
+    text-shadow: 2px 2px black;
+    color: rgb(255, 255, 255);
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 20px;;
+    color: black;
+}
+
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 17px;;
+    color: black;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;;
+    color: black;
+}
+img{
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+/*Header CSS---------------------------------------*/
+
+header { grid-area: header; }
+
+header{
+    background:rgb(220, 200, 20);
+    border-radius: 10px;;
+    border: 1px solid white;
+    text-align: center;
+    width:100%;
+    height:100px;
+    padding: 10px;
+}
+
+header h1{
+  
+}
+
+header object{
+    float:right;
+    padding: 10px;
+}
+/*Nav CSS-------------------------------------------*/
+
+nav { grid-area: nav; }
+
+nav{
+    background:rgb(220, 200, 20);
+    border-radius: 10px;
+    border: 1px solid white;
+    text-align:center;
+    width:100%;
+}
+
+nav ol{
+    border:1px solid white;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+nav li{
+    display:inline;
+    border: 1px solid white;
+    border-radius: 5px;;
+    padding:5px;   
+}
+
+nav li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    display:inline-block;
+    padding:10px;   
+    text-shadow: 1px 1px black;
+}
+
+/*Index.html CSS------------------------------------*/
+
+main { grid-area: main; }
+article { grid-area: article; }
+aside { grid-area: aside; }
+footer { grid-area: footer; }
+.rules { grid-area: rules;}
+.policies { grid-area: policies;}
+
+.grid-container-index {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+      'header header header header'
+      'nav nav nav nav'
+      'main main aside aside' 
+      'article article article article'
+      'footer footer footer footer';
+    background-color: white;
+  }
+
+  .grid-container-ridefood {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+      'header header header header'
+      'nav nav nav nav'
+      'main main aside aside' 
+      'article rules policies policies'
+      'footer footer footer footer';
+    background-color: white;
+  }
+  main {
+    border: 1px solid grey;
+    border-bottom: 10px;
+    background: rgb(255, 255, 255);
+    height:100;
+    padding:10px;   
+  }
+
+  aside {
+    border: 1px solid grey;
+    border-bottom: 10px;
+    background: rgb(255, 255, 255);
+    height:100;
+    padding:10px;   
+  }
+  aside h2{
+    background: rgb(220, 200, 20);
+  }
+article{
+    border: 1px solid grey;
+    border-bottom: none;
+    border-right:none;
+    position: relative;
+    padding: 40px;
+    
+}
+
+article h2{
+    background: rgb(220, 200, 20);
+}
+
+article p{
+ 
+}
+
+article a{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;;
+    color: blue;
+} 
+
+.rules {
+    border: 1px solid grey;
+    border-bottom: none;
+    border-right:none;
+    position: relative;
+    padding: 40px;
+}
+
+.rules h2{
+    background: rgb(220, 200, 20);
+}
+
+.rules {
+    border: 1px solid grey;
+    border-bottom: none;
+    border-right:none;
+    position: relative;
+    padding: 40px;
+}
+
+.policies h2{
+    background: rgb(220, 200, 20);
+}
+/*Footer CSS-------------------------------------------*/
+
+footer { grid-area: footer; }
+
+
+footer
+{
+    background:rgb(50, 112, 200);
+    text-align: center;
+    width:100%;
+    padding: 10px;
+}
+
+footer address
+{
+    background: rgb(243, 243, 226);
+    text-align: center;
+    margin: auto;
+    width:99%;
+    
+}
+
+footer #fpcontactInformation ul
+{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+footer #fpcontactInformation ul li
+{
+    display: inline-block;
+    margin:40px;
+    height: 30px;
+    
+}
+
+footer #fpcontactInformation #contact
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 10px;;
+    color: red;
+}
+
+footer #fpcontactInformation #name
+{
+  
+}
+
+footer #fpcontactInformation #email
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 10px;;
+    color: blue;
+}
+
+footer #fpcontactInformation #name,#location,#tel
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 10px;;
+    color: black;
+}
+
+
+
+footer #fpcontactInformation ul li a
+{
+    
+}
